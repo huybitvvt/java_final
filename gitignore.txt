@@ -1,0 +1,8 @@
+target/
+.idea/
+.vscode/
+javafx-sdk-25.0.2/
+.bookstore-data/
+settings.local
+*.class
+*.log
