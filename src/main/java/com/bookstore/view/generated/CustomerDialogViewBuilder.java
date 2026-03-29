@@ -1,0 +1,126 @@
+package com.bookstore.view.generated;
+
+import com.bookstore.controller.CustomerDialogController;
+import com.bookstore.view.GeneratedViewSupport;
+import com.bookstore.view.ViewBundle;
+import javafx.geometry.*;
+import javafx.scene.*;
+import javafx.scene.chart.*;
+import javafx.scene.control.*;
+import javafx.scene.effect.*;
+import javafx.scene.image.*;
+import javafx.scene.layout.*;
+import javafx.scene.shape.*;
+import javafx.scene.text.*;
+
+public final class CustomerDialogViewBuilder {
+    private CustomerDialogViewBuilder() {
+    }
+
+    public static ViewBundle create() {
+        CustomerDialogController controller = new CustomerDialogController();
+
+        AnchorPane root = new AnchorPane();
+        VBox vBox = new VBox();
+        GeneratedViewSupport.setProperty(vBox, "spacing", "18.0");
+        GeneratedViewSupport.addStyleClasses(vBox, "form-card");
+        GeneratedViewSupport.applyConstraint(vBox, "AnchorPane.bottomAnchor", "0.0");
+        GeneratedViewSupport.applyConstraint(vBox, "AnchorPane.leftAnchor", "0.0");
+        GeneratedViewSupport.applyConstraint(vBox, "AnchorPane.rightAnchor", "0.0");
+        GeneratedViewSupport.applyConstraint(vBox, "AnchorPane.topAnchor", "0.0");
+        VBox vBox2 = new VBox();
+        GeneratedViewSupport.setProperty(vBox2, "spacing", "4.0");
+        Label label = new Label();
+        GeneratedViewSupport.addStyleClasses(label, "section-title");
+        GeneratedViewSupport.setProperty(label, "text", "Thông tin khách hàng");
+        GeneratedViewSupport.addChild(vBox2, label);
+        Label label2 = new Label();
+        GeneratedViewSupport.addStyleClasses(label2, "section-subtitle");
+        GeneratedViewSupport.setProperty(label2, "text", "Lưu hồ sơ khách hàng để quản lý lịch sử mua hàng, ưu đãi thành viên và chăm sóc sau bán.");
+        GeneratedViewSupport.setProperty(label2, "wrapText", "true");
+        GeneratedViewSupport.addChild(vBox2, label2);
+        GeneratedViewSupport.addChild(vBox, vBox2);
+        GridPane gridPane = new GridPane();
+        GeneratedViewSupport.addStyleClasses(gridPane, "form-grid");
+        Label label3 = new Label();
+        GeneratedViewSupport.addStyleClasses(label3, "form-label");
+        GeneratedViewSupport.setProperty(label3, "text", "Họ tên");
+        GeneratedViewSupport.addChild(gridPane, label3);
+        TextField txtHoTen = new TextField();
+        GeneratedViewSupport.applyConstraint(txtHoTen, "GridPane.columnIndex", "1");
+        GeneratedViewSupport.bind(controller, "txtHoTen", txtHoTen);
+        GeneratedViewSupport.addChild(gridPane, txtHoTen);
+        Label label4 = new Label();
+        GeneratedViewSupport.addStyleClasses(label4, "form-label");
+        GeneratedViewSupport.setProperty(label4, "text", "Giới tính");
+        GeneratedViewSupport.applyConstraint(label4, "GridPane.rowIndex", "1");
+        GeneratedViewSupport.addChild(gridPane, label4);
+        ComboBox<?> cboGioiTinh = new ComboBox<>();
+        GeneratedViewSupport.applyConstraint(cboGioiTinh, "GridPane.columnIndex", "1");
+        GeneratedViewSupport.applyConstraint(cboGioiTinh, "GridPane.rowIndex", "1");
+        GeneratedViewSupport.bind(controller, "cboGioiTinh", cboGioiTinh);
+        GeneratedViewSupport.addChild(gridPane, cboGioiTinh);
+        Label label5 = new Label();
+        GeneratedViewSupport.addStyleClasses(label5, "form-label");
+        GeneratedViewSupport.setProperty(label5, "text", "Ngày sinh");
+        GeneratedViewSupport.applyConstraint(label5, "GridPane.rowIndex", "2");
+        GeneratedViewSupport.addChild(gridPane, label5);
+        DatePicker dpNgaySinh = new DatePicker();
+        GeneratedViewSupport.applyConstraint(dpNgaySinh, "GridPane.columnIndex", "1");
+        GeneratedViewSupport.applyConstraint(dpNgaySinh, "GridPane.rowIndex", "2");
+        GeneratedViewSupport.bind(controller, "dpNgaySinh", dpNgaySinh);
+        GeneratedViewSupport.addChild(gridPane, dpNgaySinh);
+        Label label6 = new Label();
+        GeneratedViewSupport.addStyleClasses(label6, "form-label");
+        GeneratedViewSupport.setProperty(label6, "text", "Số điện thoại");
+        GeneratedViewSupport.applyConstraint(label6, "GridPane.rowIndex", "3");
+        GeneratedViewSupport.addChild(gridPane, label6);
+        TextField txtSDT = new TextField();
+        GeneratedViewSupport.applyConstraint(txtSDT, "GridPane.columnIndex", "1");
+        GeneratedViewSupport.applyConstraint(txtSDT, "GridPane.rowIndex", "3");
+        GeneratedViewSupport.bind(controller, "txtSDT", txtSDT);
+        GeneratedViewSupport.addChild(gridPane, txtSDT);
+        Label label7 = new Label();
+        GeneratedViewSupport.addStyleClasses(label7, "form-label");
+        GeneratedViewSupport.setProperty(label7, "text", "Email");
+        GeneratedViewSupport.applyConstraint(label7, "GridPane.rowIndex", "4");
+        GeneratedViewSupport.addChild(gridPane, label7);
+        TextField txtEmail = new TextField();
+        GeneratedViewSupport.applyConstraint(txtEmail, "GridPane.columnIndex", "1");
+        GeneratedViewSupport.applyConstraint(txtEmail, "GridPane.rowIndex", "4");
+        GeneratedViewSupport.bind(controller, "txtEmail", txtEmail);
+        GeneratedViewSupport.addChild(gridPane, txtEmail);
+        Label label8 = new Label();
+        GeneratedViewSupport.addStyleClasses(label8, "form-label");
+        GeneratedViewSupport.setProperty(label8, "text", "Địa chỉ");
+        GeneratedViewSupport.applyConstraint(label8, "GridPane.rowIndex", "5");
+        GeneratedViewSupport.addChild(gridPane, label8);
+        TextField txtDiaChi = new TextField();
+        GeneratedViewSupport.applyConstraint(txtDiaChi, "GridPane.columnIndex", "1");
+        GeneratedViewSupport.applyConstraint(txtDiaChi, "GridPane.rowIndex", "5");
+        GeneratedViewSupport.bind(controller, "txtDiaChi", txtDiaChi);
+        GeneratedViewSupport.addChild(gridPane, txtDiaChi);
+        GeneratedViewSupport.addChild(vBox, gridPane);
+        HBox hBox = new HBox();
+        GeneratedViewSupport.addStyleClasses(hBox, "dialog-actions");
+        Button btnCancel = new Button();
+        GeneratedViewSupport.setProperty(btnCancel, "mnemonicParsing", "false");
+        GeneratedViewSupport.bindAction(btnCancel, controller, "handleCancel");
+        GeneratedViewSupport.addStyleClasses(btnCancel, "chip-button");
+        GeneratedViewSupport.setProperty(btnCancel, "text", "Hủy");
+        GeneratedViewSupport.bind(controller, "btnCancel", btnCancel);
+        GeneratedViewSupport.addChild(hBox, btnCancel);
+        Button btnSave = new Button();
+        GeneratedViewSupport.setProperty(btnSave, "mnemonicParsing", "false");
+        GeneratedViewSupport.bindAction(btnSave, controller, "handleSave");
+        GeneratedViewSupport.addStyleClasses(btnSave, "primary-button");
+        GeneratedViewSupport.setProperty(btnSave, "text", "Lưu thông tin");
+        GeneratedViewSupport.bind(controller, "btnSave", btnSave);
+        GeneratedViewSupport.addChild(hBox, btnSave);
+        GeneratedViewSupport.addChild(vBox, hBox);
+        GeneratedViewSupport.addChild(root, vBox);
+
+        GeneratedViewSupport.initialize(controller);
+        return new ViewBundle(root, controller);
+    }
+}

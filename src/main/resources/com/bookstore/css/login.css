@@ -1,0 +1,395 @@
+/* ================================================
+   LOGIN MODERN UI - SaaS Style
+   ================================================ */
+
+/* Root Pane */
+.root-pane {
+    -fx-background-color: #f8fafc;
+}
+
+/* LEFT PANEL - Branding */
+.left-panel {
+    -fx-background-color: linear-gradient(to bottom right, #1e3a8a, #2563eb);
+    -fx-min-width: 0;
+    -fx-pref-width: 50%;
+}
+
+.logo-text {
+    -fx-font-family: "Segoe UI", "Roboto", "Inter", sans-serif;
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(gaussian, #1e40af, 2.0, 0.5, 0.0, 1.0);
+}
+
+.system-title {
+    -fx-font-family: "Segoe UI", "Roboto", "Inter", sans-serif;
+    -fx-font-size: 22px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #ffffff;
+    -fx-opacity: 0.95;
+}
+
+.main-title {
+    -fx-font-family: "Segoe UI", "Roboto", "Inter", sans-serif;
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-line-spacing: 8px;
+}
+
+.description {
+    -fx-font-family: "Segoe UI", "Roboto", "Inter", sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #bfdbfe;
+    -fx-line-spacing: 4px;
+    -fx-padding: 0 20 0 20;
+}
+
+.illustration-box {
+    -fx-padding: 20 0 20 0;
+}
+
+.feature-list {
+    -fx-padding: 20 0 0 0;
+}
+
+.feature-item {
+    -fx-font-family: "Segoe UI", "Roboto", "Inter", sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #ffffff;
+    -fx-opacity: 0.9;
+}
+
+/* RIGHT PANEL */
+.right-panel {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 0;
+    -fx-min-width: 0;
+    -fx-pref-width: 50%;
+}
+
+/* Form Title */
+.form-title {
+    -fx-font-family: "Segoe UI", "Roboto", "Inter", sans-serif;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f2937;
+}
+
+.form-subtitle {
+    -fx-font-family: "Segoe UI", "Roboto", "Inter", sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #6b7280;
+}
+
+/* Input Labels */
+.input-label {
+    -fx-font-family: "Segoe UI", "Roboto", "Inter", sans-serif;
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #374151;
+}
+
+/* Input Wrapper */
+.input-wrapper {
+    -fx-background-color: #f9fafb;
+    -fx-background-radius: 10px;
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 10px;
+    -fx-padding: 0 12 0 12;
+    -fx-spacing: 10;
+    -fx-alignment: CENTER_LEFT;
+    -fx-pref-height: 50px;
+}
+
+.input-wrapper:focus-within {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #3b82f6;
+    -fx-border-width: 2px;
+}
+
+/* Input Icon */
+.input-icon {
+    -fx-font-size: 16px;
+    -fx-text-fill: #6b7280;
+    -fx-padding: 0 5 0 5;
+}
+
+/* Logo Icon */
+.logo-icon {
+    -fx-font-size: 48px;
+}
+
+/* Modern Input */
+.modern-input {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-font-family: "Segoe UI", "Roboto", "Inter", sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #1f2937;
+    -fx-prompt-text-fill: #9ca3af;
+    -fx-padding: 0 0 0 0;
+    -fx-pref-height: 48px;
+}
+
+.modern-input:focused {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+/* Show Password Button */
+.show-password-btn {
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: transparent;
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+    -fx-padding: 5 10 5 10;
+}
+
+.show-password-btn:hover {
+    -fx-background-color: #f3f4f6;
+}
+
+/* Modern Checkbox */
+.modern-checkbox {
+    -fx-font-family: "Segoe UI", "Roboto", "Inter", sans-serif;
+    -fx-font-size: 13px;
+    -fx-text-fill: #6b7280;
+    -fx-cursor: hand;
+}
+
+.modern-checkbox .box {
+    -fx-background-color: #f3f4f6;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+}
+
+.modern-checkbox:selected .box {
+    -fx-background-color: #3b82f6;
+    -fx-border-color: #3b82f6;
+}
+
+/* Forgot Password Link */
+.forgot-link {
+    -fx-font-family: "Segoe UI", "Roboto", "Inter", sans-serif;
+    -fx-font-size: 13px;
+    -fx-text-fill: #3b82f6;
+    -fx-cursor: hand;
+}
+
+.forgot-link:hover {
+    -fx-text-fill: #1d4ed8;
+    -fx-underline: true;
+}
+
+/* Error Message */
+.error-message {
+    -fx-font-family: "Segoe UI", "Roboto", "Inter", sans-serif;
+    -fx-font-size: 13px;
+    -fx-text-fill: #ef4444;
+    -fx-background-color: #fef2f2;
+    -fx-padding: 10 15 10 15;
+    -fx-background-radius: 8px;
+    -fx-alignment: center;
+    -fx-max-width: 320px;
+}
+
+/* Login Button with Gradient */
+.login-button {
+    -fx-background-color: #3b82f6;
+    -fx-background-radius: 12;
+    -fx-border-color: transparent;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 15px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #ffffff;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, #2563eb, 4, 0.3, 0.0, 2.0);
+}
+
+.login-button:hover {
+    -fx-background-color: #2563eb;
+    -fx-effect: dropshadow(gaussian, #1d4ed8, 8, 0.4, 0.0, 3.0);
+}
+
+.login-button:pressed {
+    -fx-background-color: #1d4ed8;
+    -fx-effect: dropshadow(gaussian, #1e40af, 2, 0.2, 0.0, 1.0);
+}
+
+.login-button:focused {
+    -fx-background-color: #3b82f6;
+    -fx-border-color: #60a5fa;
+    -fx-border-width: 2;
+}
+
+/* Loading Container */
+.loading-container {
+    -fx-alignment: center;
+}
+
+.loading-indicator {
+    -fx-progress-color: #ffffff;
+}
+
+.loading-text {
+    -fx-font-family: "Segoe UI", "Roboto", "Inter", sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #6b7280;
+}
+
+/* ================================================
+   INPUT FIELDS
+   ================================================ */
+.input-field {
+    -fx-background-color: #f1f5f9;
+    -fx-background-radius: 12;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 12;
+    -fx-padding: 0 16 0 16;
+    -fx-font-size: 14px;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-prompt-text-fill: #94a3b8;
+    -fx-text-fill: #1e293b;
+}
+
+.input-field:focused {
+    -fx-background-color: white;
+    -fx-border-color: #3b82f6;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, #3b82f6, 8, 0.2, 0.0, 0.0);
+}
+
+.input-field:hover {
+    -fx-border-color: #cbd5e1;
+}
+
+/* ================================================
+   ICON BUTTON
+   ================================================ */
+.icon-button {
+    -fx-background-color: #f1f5f9;
+    -fx-background-radius: 12;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 12;
+    -fx-font-size: 16px;
+}
+
+.icon-button:hover {
+    -fx-background-color: #e2e8f0;
+    -fx-border-color: #cbd5e1;
+}
+
+.icon-button:pressed {
+    -fx-background-color: #cbd5e1;
+}
+
+/* ================================================
+   CUSTOM CHECKBOX
+   ================================================ */
+.custom-checkbox {
+    -fx-cursor: hand;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+.custom-checkbox .box {
+    -fx-background-color: #f1f5f9;
+    -fx-border-color: #cbd5e1;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-pref-width: 20;
+    -fx-pref-height: 20;
+}
+
+.custom-checkbox:hover .box {
+    -fx-border-color: #3b82f6;
+}
+
+.custom-checkbox:selected .box {
+    -fx-background-color: #3b82f6;
+    -fx-border-color: #3b82f6;
+}
+
+.custom-checkbox:selected .box .mark {
+    -fx-background-color: white;
+    -fx-mark-color: white;
+}
+
+/* ================================================
+   HYPERLINK
+   ================================================ */
+.hyperlink {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 13px;
+    -fx-text-fill: #3b82f6;
+    -fx-cursor: hand;
+    -fx-underline: false;
+}
+
+.hyperlink:hover {
+    -fx-text-fill: #1d4ed8;
+    -fx-underline: true;
+}
+
+.hyperlink:visited {
+    -fx-text-fill: #6366f1;
+}
+
+/* ================================================
+   ERROR LABEL
+   ================================================ */
+.error-label {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 13px;
+    -fx-padding: 8 12 8 12;
+    -fx-background-radius: 8;
+    -fx-background-color: #fef2f2;
+    -fx-text-fill: #dc2626;
+}
+
+/* ================================================
+   ANIMATIONS
+   ================================================ */
+
+/* Fade In Animation for Root Pane */
+@keyframes fadeIn {
+    0% {
+        -fx-opacity: 0;
+    }
+    100% {
+        -fx-opacity: 1;
+    }
+}
+
+.root-pane {
+    -fx-animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Pulse Animation for Loading */
+@keyframes pulse {
+    0%, 100% {
+        -fx-opacity: 1;
+    }
+    50% {
+        -fx-opacity: 0.5;
+    }
+}
+
+.loading-indicator {
+    -fx-animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Button Hover Effect */
+.login-button {
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+/* Input Focus Animation */
+.input-wrapper {
+    -fx-transition: all 0.2s ease-in-out;
+}
